@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+<div class="container text-center">
+    <div *ngIf="isLogged; else loggedOut"><h2>Bienvenido {{nombreUsuario}}</h2></div>
+    <ng-template #loggedOut><h2>No has iniciado sesión</h2></ng-template>
+    <div class= "container d-flex justify-content-center mt-5">
+    <div class="card" style="width: 18rem;">
+    <img src="https://miro.medium.com/max/3000/1*I9paH_iKTmSeYs1HzRzuag.png" class="card-img-top" alt="ImagenInicio">
+    <div class="card-body">
+      <p class="card-text">Aplicación para subida de imagenes con Angular y Spring.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
